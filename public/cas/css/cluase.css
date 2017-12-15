@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*条款*/
+.reg-cluase{
+  width: 700px;
+  height: 450px;
+  background-color: #fff;
+  position:absolute;
+  left: 50%;
+  margin-left:-350px;
+  margin-top: -225px;
+  top: 50%;
+  z-index:99;
+  padding: 40px 35px 0px;
+  display: none;
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+.reg-cluase h3{
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0,0,0,0.90);
+  letter-spacing: 0.88px;
+  margin-bottom: 23px;
+}
+.reg-cluase .reg-clu-text{
+  height: 264px;
+  overflow: auto;
+  font-size: 14px;
+  color: rgba(0,0,0,0.60);
+  letter-spacing: 0.77px;
+  margin-bottom: 21px;
+}
+.reg-cluase .reg-clu-agree{
+  width: 230px;
+  height: 40px;
+  display: block;
+  margin: 0 auto  11px;
+  background: #FE762D;
+  border-radius: 4px;
+  border:none;
+  font-size: 14px;
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.77px;
+}
+  .reg-cluase .reg-clu-agree:focus,
+  .reg-cluase .reg-clu-disagree:focus{
+    outline: none;
+  }
+.reg-cluase .reg-clu-disagree{
+  display: block;
+  margin:0 auto;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: rgba(0,0,0,0.60);
+  letter-spacing: 0.77px;
+}
+/*遮罩*/
+.seg-shade{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 88;
+  display: none;
+}

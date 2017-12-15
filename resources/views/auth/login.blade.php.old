@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ asset('cas/css/bootstrap.min.css') }}">
+    <script type="text/javascript" src="{{ asset('cas/js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('cas/js/angular.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('cas/css/cluase.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cas/css/login.css') }}">
+    <script>
+        var login_headText = '登录';
+    </script>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{{ asset('cas/css/login_head.css') }}">
+    <link rel="stylesheet" href="{{ asset('cas/css/common.css') }}">
+</head>
+<body>
+<div id="mark_mask"
+     style="display:none;position:fixed;top:40px;left:0;z-index:99999999;height:1000px;width:100%;background:rgba(0,0,0,0.4);"></div>
+<div class="login">
+    <div class="content">
+        <div class="log-banner">
+            <div class="banner-pic">
+                <ul>
+                    <li style="display: list-item;"><a target="_blank" href="javascript:;"><img alt=""
+                                                                                                src="{{ asset('cas/img/banner1.jpg') }}"></a>
+                    </li>
+                    <li style="display: none;"><a target="_blank" href="javascript:;"><img alt=""
+                                                                                           src="{{ asset('cas/img/banner2.jpg') }}"></a>
+                    </li>
+                    <li style="display: none;"><a target="_blank" href="javascript:;"><img alt=""
+                                                                                           src="{{ asset('cas/img/banner3.jpg') }}"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner-tab">
+                <ul>
+                    <li class="on"></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="log-right">
+
+
+         <form class="fm-v clearfix" method="POST" action="{{ route('login') }}">
+                                {{ csrf_field() }}
+                                    <h3 style="">无线运营平台</h3>
+                                                <i class="logi"></i>
+                                                <p class="log-hint"></p>
+                                                <input id="username" name="username" class="log-email form-control" tabindex="1"
+                                                       style="width: 350px; height: 52px; font-size: 24px; line-height: 52px; border-bottom-color: transparent;"
+                                                       placeholder="账户" type="text" value="{{ old('email') }}" size="25" autocomplete="false"
+                                                       data-form-un="1512718434038.5657">
+                                    <input id="password" name="password" class="log-pass form-control form-password" tabindex="2"
+                                                       placeholder="密码" type="password" value="" size="25" autocomplete="off"
+                                                       data-form-pw="1512718434038.5657">
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <button type="submit" class="btn btn-primary">
+                                            Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+            <!--<form id="fm1" class="fm-v clearfix" action="/cas/code/login.php"-->
+            <!--method="post">-->
+            <h3 style="">无线运营平台</h3>
+            <i class="logi"></i>
+            <p class="log-hint"></p>
+            <input id="username" name="username" class="log-email form-control" tabindex="1"
+                   style="width: 350px; height: 52px; font-size: 24px; line-height: 52px; border-bottom-color: transparent;"
+                   placeholder="账户" type="text" value="" size="25" autocomplete="false"
+                   data-form-un="1512718434038.5657">
+            <input id="password" name="password" class="log-pass form-control form-password" tabindex="2"
+                   placeholder="密码" type="password" value="" size="25" autocomplete="off"
+                   data-form-pw="1512718434038.5657">
+            <input type="hidden" name="lt" value="LT-400-evFjgAIXG2C2eP0laaVabcddjozDJQ">
+            <input type="hidden" name="execution" value="e4s1">
+            <input type="hidden" name="_eventId" value="submit">
+            <input class="btn-submit log-btn btn" name="submit" style="margin-top: 40px; pointer-events: auto;"
+                   accesskey="l" value="登录" tabindex="4" type="submit" data-form-sbm="1512718434038.5657">
+            <!--</form>-->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--zhezao-->
+<div class="seg-shade"></div>
+<script type="text/javascript" src="{{ asset('cas/js/login.js') }}"></script>
+<script src="{{ asset('cas/js/login_head.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('cas/css/index_bot.css') }}">
+</body>
+</html>

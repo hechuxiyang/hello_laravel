@@ -1,0 +1,105 @@
+
+@charset "UTF-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+a,h2,p,h3,div,li,ul,h1{
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+ol,li{
+  list-style:none;
+}
+.content{
+  width:1200px;
+  height:100%;
+  margin:0 auto;
+}
+*,:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button{
+  outline: none;
+}
+input{
+  outline: none;
+}
+.font_c_fe{
+	color:#FE762D;
+}
+.font_s_14{
+	font-size: 14px;
+}
+.font_s_16{
+	font-size: 16px;
+}
+.font_s_18{
+	font-size: 18px;
+}
+.font_s_20{
+	font-size: 20px;
+}
+.font_s_22{
+  font-size: 22px;
+}
+.font_c_0_3{
+  color: rgba(0,0,0,.3 );
+
+}
+.font_c_0_6{
+color: rgba(0,0,0,.6);
+}
+.font_c_0_9{
+  color: rgba(0,0,0,0.9);
+}
+.font_ls_77{
+  letter-spacing: 0.77px;
+}
+.font_ls_88{
+	letter-spacing: 0.88px;
+}
+.font_ls_111{
+	letter-spacing: 1.11px;
+}
+.font_ls_122{
+  letter-spacing: 1.22px;
+}
+
+.clearfix:after, .clearfix:before {
+    content: '';
+    clear: both;
+}
+.clearfix:after{
+    display: table;
+    height: 0;
+}
+/*通用按钮*/
+.yunrui_btn{
+  width: 110px;
+  background: #FE762D;
+  border-radius: 4px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  outline: none;
+  border:none;
+  color: rgba(255,255,255,.95);
+  letter-spacing: 0.88px;
+}
+.get_code{
+  color: rgba(44,102,254,0.90);
+  border:none;
+  outline: none;
+  background: none;
+}

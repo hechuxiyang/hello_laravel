@@ -1,0 +1,148 @@
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+* {
+    font-family: PingFangSC-Regular;
+}
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 1140px;
+    background: #67d5f9 url(../img/bg.png) no-repeat right top;
+    background-size: 110% auto;
+    animation: mymove 10s infinite;
+    -webkit-animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    0% {
+        background-position: right top;
+    }
+    40% {
+        background-position: left top;
+    }
+    60% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right top;
+    }
+}
+
+@-webkit-keyframes mymove{
+    0% {
+        background-position: right top;
+    }
+    40% {
+        background-position: left top;
+    }
+    60% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right top;
+    }
+}
+.wrap {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap .quit {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: -0.34px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 20px;
+}
+
+.wrap .quit:hover {
+    color: #3B70F0;
+    background: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 726px;
+    height: 451px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(white, 0.5);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 130px;
+}
+
+.content a {
+    background: #ffffff;
+    font-size: 24px;
+    color: #403231;
+    padding: 10px 0;
+    display: block;
+}
+
+.img-wrap img {
+    display: block;
+}
+
+.img-wrap:hover {
+    box-shadow: 0 0 11px 0 rgb(160, 183, 238);
+    margin: 0;
+}
+
+.img-wrap:hover a {
+    color: #3B70F0;
+   /* font-size: 25.2px;*/
+}
+
+.img-wrap:hover img {
+    width: 200px;
+}
+
+.img-wrap {
+    margin: 6px;
+    transition: margin 1s;
+    -moz-transition: margin 1s;
+    -webkit-transition: margin 1s;
+    -o-transition: margin 1s;
+}
+
+.img-wrap img {
+    width: 188px;
+    transition: width 1s;
+    -moz-transition: width 1s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+.title {
+    padding-top: 45px;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: -1.32px;
+}
+
+@media screen and (max-width: 1240px) {
+    body {
+        background-size: 110% 100%;
+    }
+}

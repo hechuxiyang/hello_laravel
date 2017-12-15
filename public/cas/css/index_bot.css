@@ -1,0 +1,220 @@
+@charset "UTF-8";
+li {
+    list-style: none;
+}
+.clearfix:after, .clearfix:before {
+    content: '';
+    clear: both;
+}
+.clearfix:after{
+    display: table;
+    height: 0;
+}
+.por_info_box{
+    min-width: 1200px;
+    background:rgb(248,248,250);
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.por_info_box .portal_info{
+    width: 1200px;
+    margin:0 auto;
+}
+.por_info_box .portal_info h3{
+    color: rgba(0,0,0,.9);
+    font-size: 24px;
+    letter-spacing: 1.33px;
+    text-align: center;
+}
+.por_info_box .portal_info p{
+    color:rgba(0,0,0,.6);
+    font-size: 16px;
+    text-align:center;
+    line-height: 21px;
+    height: 21px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+ .por_info_box .portal_info ul{
+    width:1200px;
+    text-align: justify;
+
+}
+.por_info_box .portal_info ul li{
+    float: left;
+    width: 175px;
+    margin-right: 166px;
+    text-align: center;
+}
+
+.por_info_box .portal_info ul li:last-child{
+    margin-right: 0;
+}
+.por_info_box .portal_info ul li span{
+    color: rgba(0,0,0,.9);
+    font-size: 18px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.por_info_box .portal_info >a{
+  transition: all 0.5s ease;
+    margin-top: 100px;
+}
+/*客户案例*/
+.customerCase_box{
+    min-width: 1200px;
+    background: rgb(248,248,250);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.customerCase_list{
+    width: 1200px;
+    margin:0 auto;
+
+}
+.customerCase_list li{
+    float: left;
+    width: 270px;
+    margin-right: 40px;
+    background: #FFFFFF;
+border: 1px solid #F2D9CB;
+
+}
+.customerCase_list li:hover{
+    box-shadow: 0px 0px 6px 0px rgba(254,117,45,0.08), 0px 6px 6px 0px rgba(254,117,45,0.16);
+}
+.customerCase_list li dt{
+    width: 268px;
+    overflow: hidden;
+    height: 280px;
+}
+.customerCase_list li img{
+    width:100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.customerCase_list li:hover img{
+ width:110%;
+}
+.customerCase_list li a{
+    display: block;
+    width: 268px;
+}
+.customerCase_list li:last-child{
+    margin-right: 0;
+}
+.customerCase_box h4{
+    text-align: center;
+    line-height: 31px;
+    font-size: 24px;
+    color: rgba(0,0,0,.9);
+    letter-spacing: 1.33px;
+    margin-top: 0;
+}
+.customerCase_box p{
+    color: rgba(0,0,0,.6);
+    font-size:16px;
+    letter-spacing: 0.88px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.customerCase_list li dd{
+    height: 55px;
+    background: #fff;
+    line-height: 55px;
+    text-align: center;
+font-size: 18px;
+color: rgba(0,0,0,0.90);
+letter-spacing: 0.99px;
+}
+.big_btn{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fe762d;
+    border:1px solid #fe762d;
+    border-radius: 2px;
+    display: block;
+    margin:0 auto;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+.customerCase_box>a{
+    margin-top: 80px;
+}
+/*广告池*/
+.advertisement_box{
+    background: rgba(254,117,45,0.95);
+    min-width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.advertisement_box h4{
+font-size: 24px;
+color: rgba(255,255,255,0.90);
+letter-spacing: 1.33px;
+text-align: center;
+line-height: 31px;
+line-height: 31px;
+}
+.advertisement_box p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.88px;
+    text-align: justify;
+    width: 754px;
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.big_btn_f{
+      width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border:1px solid #fff;
+    border-radius: 2px;
+    display: block;
+    margin:0 auto;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+
+/* 公共footer部分*/
+
+.footer_box{
+    min-width: 1200px;
+    padding:35px 0;
+    background:rgb(248,248,250);
+    text-align: center;
+}
+.footer_box ul{
+    width: 200px;
+    margin:0 auto;
+    text-align: center;
+}
+.footer_box ul li{
+    float: left;
+    margin-right: 30px;
+    width: 65px;
+}
+.footer_box ul li:last-child{
+    margin-right: 0;
+}
+.footer_box ul li a{
+    color:rgba(0,0,0,.3);
+    font-size: 14px;
+    letter-spacing: 0.77px;
+}
+.footer_box p{
+ text-align: center;
+font-size: 14px;
+color: rgba(0,0,0,0.30);
+letter-spacing: 0.77px;
+margin-top: 25px;
+}

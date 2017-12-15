@@ -1,0 +1,538 @@
+﻿@charset "UTF-8";
+a:hover {
+    color: #fe762d;
+    text-decoration: none;
+}
+
+body {
+    background: url(../img/bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.login {
+    min-width: 1200px;
+    height: 725px;
+    text-align: center;
+}
+
+.login .content .log-banner {
+    width: 520px;
+    height: 390px;
+    margin-top: 164px;
+    margin-left: 60px;
+    float: left;
+    position: relative;
+}
+
+.login .content {
+    border: 1px solid transparent;
+}
+
+.login .content .log-banner .banner-pic {
+    width: 520px;
+    height: 390px;
+    overflow: hidden;
+}
+
+.login .content .log-banner .banner-pic ul {
+    width: 100%;
+}
+
+.login .content .log-banner .banner-pic ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 520px;
+    height: 390px;
+    display: none;
+}
+
+.login .content .log-banner .banner-tab {
+    width: 520px;
+    text-align: center;
+    position: absolute;
+    bottom: -27px;
+}
+
+.login .content .log-banner .banner-tab ul {
+    display: inline-block;
+}
+
+.login .content .log-banner .banner-tab ul li {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.login .content .log-banner .banner-tab ul li.on {
+    background-color: #FE762D;
+}
+
+.login .log-right {
+    width: 350px;
+    float: right;
+    overflow: hidden;
+    margin-right: 92px;
+}
+
+.login .log-right h3,
+.login .seg-right h3 {
+    margin-top: 162px;
+    text-align: center;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.90);
+    letter-spacing: 1.22px;
+    margin-bottom: 38px;
+}
+
+.login .seg-right h3 {
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+.login .log-right i,
+.login .seg-right i {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #FE762D;
+    margin-bottom: 39px;
+}
+
+.login .seg-right i {
+    margin-bottom: 57px;
+}
+
+.login .log-right p.log-hint,
+.login .seg-right p.seg-hint {
+    width: 350px;
+    height: 33px;
+    background: rgba(255, 73, 52, 0.10);
+    border: 1px solid #FF4A35;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.77;
+    font-size: 14px;
+    padding-left: 16px;
+    display: none;
+}
+
+.yes {
+    background: rgba(43, 208, 143, 0.10) !important;
+    border: 1px solid #2BD08F !important;
+}
+
+.no {
+    background: rgba(255, 73, 52, 0.10) !important;
+    border: 1px solid #FF4A35 !important;
+}
+
+.login .seg-right p.seg-hint {
+    background: rgba(43, 208, 143, 0.10);
+    border: 1px solid #2BD08F;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.90);
+    letter-spacing: 0.77px;
+}
+
+.login .log-right .log-pass:focus,
+.login .log-right .log-email:focus,
+.inputMailList:focus,
+.login .seg-right input.seg-pass:focus,
+.login .seg-right input.seg-conpass:focus,
+.login .seg-right .est-test input.seg-prov:focus {
+    background: rgba(254, 117, 45, 0.10);
+    border: 1px solid #FE762D;
+
+}
+
+.seg-prov::-ms-clear {
+    display: none;
+}
+
+.inputMailList {
+    border-bottom: none;
+}
+
+.login .seg-right input.seg-conpass,
+.login .seg-right input.seg-pass {
+    border-radius: 0px;
+    border-bottom: none;
+}
+
+.login .log-right .log-pass,
+.login .seg-right .seg-conpass,
+.login .seg-right .seg-pass,
+.login .log-right .log-email,
+.login .seg-right .inputMailList,
+.login .seg-right .seg-prov {
+    height: 54px;
+}
+
+.login .log-right .log-email,
+.login .seg-right .inputMailList {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.login .log-right .log-pass,
+.login .seg-right .seg-conpass,
+.login .seg-right .seg-pass {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.login .log-right .log-pass {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.login .log-right .log-email {
+    border-bottom-color: transparent;
+}
+
+.login .seg-right .seg-pass {
+    margin-bottom: 0px;
+}
+
+.login .seg-right input.seg-conpass,
+.login .seg-right input.seg-pass {
+    margin-bottom: 0px;
+}
+
+.login .seg-right .est-test {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-top: none;
+
+    width: 350px;
+    height: 55px;
+}
+
+.login .seg-right .est-test input.seg-prov {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #ccc;
+    width: 350px;
+    margin: 0;
+    padding: 6px 12px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#segprov:input-placeholder {
+    color: #000;
+}
+
+/*修改*/
+.idcode {
+    border: 1px solid #ccc;
+    width: 350px;
+    height: 54px;
+    margin-bottom: 30px;
+    position: relative;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 4px;
+    border-botomm-right-radius: 4px;
+    border-top: none;
+}
+
+.idcode input {
+    position: absolute;
+    left: 0px;
+    height: 53px;
+    top: 0px;
+    border: none;
+    padding-left: 10px;
+    width: 160px;
+    border-right: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.idcode .idcodepic {
+    position: absolute;
+    left: 160px;
+
+}
+
+.idcode .idcodesx {
+    width: 32px;
+    height: 54px;
+    position: absolute;
+    right: 0px;
+    line-height: 54px;
+    background: #d8d8d8 url("../../images/sx.png") center center no-repeat;
+}
+
+.login .seg-right .est-test button {
+    width: 116px;
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    height: 54px;
+    background-color: transparent;
+    border: none;
+    color: #fe762d;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    letter-spacing: 0.9;
+}
+
+.login .log-right .log-btn,
+.login .seg-right .seg-btn {
+    width: 350px;
+    height: 54px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.30);
+    letter-spacing: 0.99px;
+    font-family: "微软雅黑";
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.login .log-right .log-btn-on,
+.login .seg-right .seg-btn-on {
+    background: #FE762D;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.login .log-right .log-btn:focus {
+    border: none;
+    outline: none;
+}
+
+.login .log-right .log-skip {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 44px;
+}
+
+.login .log-right .log-skip a {
+    display: block;
+    letter-spacing: 0.88px;
+    font-size: 16px;
+}
+
+.login .log-right .log-skip a.log-forpwd {
+    float: left;
+    color: rgba(0, 0, 0, 0.30);
+}
+
+.login .log-right .log-skip a.log-reg {
+    float: right;
+    color: #fe762d;
+}
+
+.login .log-right .log-agreement,
+.login .log-right .seg-agreement {
+    color: #666;
+    text-align: left;
+}
+
+.seg-agreement a:hover，
+.log-agreement a:hover {
+    color: #7e762d;
+}
+
+.seg-prov:focus {
+    outline: none;
+    padding-left: 15px;
+}
+
+/*注册样式*/
+.login .seg-right {
+    width: 350px;
+    float: right;
+    margin-right: 92px;
+}
+
+.login .seg-right .seg-exis {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 83px;
+    text-align: right;
+}
+
+.login .seg-right .seg-exis span {
+    letter-spacing: 0.88px;
+}
+
+.login .seg-right .seg-exis span.seg-immed a:hover {
+    color: #FE762D;
+}
+
+.login .seg-right .seg-exis span.seg-thirty {
+    color: #666;
+}
+
+/*模态框*/
+.seg-verify:focus {
+    outline: none;
+}
+
+.seg-popup,
+.reg-popup {
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #979797;
+    display: none;
+}
+
+.seg-popup .seg-icon,
+.reg-popup .reg-icon {
+    width: 90px;
+    height: 90px;
+    margin-top: 80px;
+    margin-left: 305px;
+    margin-bottom: 20px;
+    background: transparent url("../../images/login/big_success.png")
+}
+
+.seg-popup h4,
+.reg-popup h4 {
+    text-align: center;
+    font-family: "微软雅黑";
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.90);
+    letter-spacing: 1.22px;
+}
+
+.reg-popup h4 {
+    margin-bottom: 10px;
+}
+
+.reg-popup p.reg-text {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.60);
+    letter-spacing: 0.88px;
+    margin-bottom: 20px;
+}
+
+.reg-popup p.reg-name {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.30);
+    letter-spacing: 0.88px;
+    margin-bottom: 40px;
+}
+
+.reg-popup a {
+    font-size: 16px;
+    color: #FE762D;
+    letter-spacing: 0.88px;
+    text-align: center;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.seg-popup a {
+    font-size: 16px;
+    color: #FE762D;
+    letter-spacing: 0.88px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.seg-popup a:hover {
+    color: #fe762d;
+}
+
+.seg-popup p {
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.30);
+    letter-spacing: 0.88px;
+    cursor: pointer;
+}
+
+/*条款*/
+.reg-cluase {
+    width: 700px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -225px;
+    top: 50%;
+    z-index: 99;
+    padding: 40px 35px 0px;
+    display: none;
+}
+
+.reg-cluase h3 {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.90);
+    letter-spacing: 0.88px;
+    margin-bottom: 23px;
+}
+
+.reg-cluase .reg-clu-text {
+    height: 264px;
+    overflow: auto;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
+    letter-spacing: 0.77px;
+}
+
+/*遮罩*/
+.seg-shade {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 88;
+    display: none;
+}
+
+/*引用*/
+.emailist {
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    list-style-type: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.emailist li {
+    padding: 2px 11px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.emailist .on, .emailist li:hover {
+    background-color: #eee;
+}
